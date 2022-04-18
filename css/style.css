@@ -164,3 +164,60 @@ body > header {
 	background: #1992d4;
 }
 
+
+
+/*Style main section *******************/
+main {
+	display: grid;
+	grid-template-columns: 1fr 240px;
+}
+.your-projects {
+	grid-area: 1 / 1 / 3 / 2;
+
+	padding: 24px 16px;
+}
+.project-card-container {
+	padding-top: 8px;
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+}
+.project-card {
+	padding: 32px 24px;
+	background: #ffffff;
+	border-radius: 5px;
+	border-left: 8px solid #fbbf24;
+	box-shadow: 2px 3px 6px 0px #9e9f9f;
+
+	display: flex;
+	flex-direction: column;
+}
+.card-header {
+	font-weight: 500;
+	display: inline;
+}
+p {
+	margin: 0;
+	display: inline;
+	font-weight: 400;
+	font-size: 0.9em;
+	opacity: 0.6;
+}
+.card-btns {
+	margin-top: 24px;
+	align-self: flex-end;
+
+	display: flex;
+	gap: 18px;
+}
+.card-btns img{
+	width: 18px;
+}
+.card-btns span:hover {
+	cursor: pointer;
+	opacity: 0.6;
+}
+.card-btns span:active {
+	opacity: 1;
+}
