@@ -168,13 +168,17 @@ body > header {
 
 /*Style main section *******************/
 main {
+	padding: 36px 18px;
 	display: grid;
-	grid-template-columns: 1fr 240px;
+	grid-template-columns: 1fr 256px;
 }
+
+/**style main > .your-project section ****/
+
 .your-projects {
 	grid-area: 1 / 1 / 3 / 2;
 
-	padding: 24px 16px;
+	padding-right: 16px;
 }
 .project-card-container {
 	padding-top: 8px;
@@ -220,4 +224,24 @@ p {
 }
 .card-btns span:active {
 	opacity: 1;
+}
+
+/**style main > .anouncements section***/
+.announcements > header {
+	padding-bottom: 8px;
+}
+.announcement-container {
+	background: #ffffff;
+	padding: 0 16px;
+	border-radius: 5px;
+	box-shadow: 2px 3px 6px 0px #9e9f9f;
+}
+.announcement {
+	padding: 16px 0;
+}
+.announcement:not(:last-child){
+	border-bottom: 2px solid #dfdede;
+}
+.announcement-header {
+	font-weight: 500;
 }
