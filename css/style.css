@@ -106,9 +106,9 @@ body > header {
 }
 .search-bar-section > .user-profile-icon {
 	flex-shrink: 0;
-	width: 45px;
-	height: 45px;
-	margin: 0 20px;
+	width: 35px;
+	height: 35px;
+	margin: 0 15px;
 }
 .user-profile-icon {
 	width: 50px;
@@ -127,4 +127,18 @@ body > header {
 
 .header-buttons {
 	margin-left: auto;
+}
+
+.user-info {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+}
+.user-message {
+	font-size: 0.8em;
+	font-weight: 500;
+}
+.user-info .user-name {
+	font-size: 1.5em;
+	font-weight: 500;
 }
