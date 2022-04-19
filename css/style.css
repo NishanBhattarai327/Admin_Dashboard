@@ -62,6 +62,12 @@ main {
 .nav-link, .system-link {
 	margin-bottom: 8px;
 }
+aside a:hover {
+	opacity: 0.8;
+}
+aside a:active {
+	opacity: 1;
+}
 
 
 
@@ -101,8 +107,12 @@ body > header {
 .notification {
 	margin-left: auto;
 }
-.search-btn, .notification {
+.search-btn:hover, .notification:hover {
 	cursor: pointer;
+	opacity: 0.6;
+}
+.search-btn:active, .notification:active {
+	opacity: 1;
 }
 .search-bar-section > .user-profile-icon {
 	flex-shrink: 0;
@@ -244,4 +254,58 @@ p {
 }
 .announcement-header {
 	font-weight: 500;
+}
+
+/***style main > .trending section ****/
+.trending-project-container {
+	background: #ffffff;
+	padding: 16px 18px;
+	border-radius: 5px;
+	box-shadow: 2px 3px 6px 0px #9e9f9f;
+	display: flex;
+	flex-direction: column;
+	gap: 11px;
+}
+.trending > header {
+	padding: 32px 0 8px 0;
+}
+.project-info {
+	display: flex;
+	gap: 16px;
+}
+.project-info > .profile-icon {
+	flex-shrink: 0;
+
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.profile-icon > img {
+	width: 48px;
+}
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.profile-name {
+	font-weight: 400;
+}
+.text {
+	opacity: 0.6;
+}
+.siba {
+	background: #a4a1fa;
+}
+.morty {
+	background: #c0eae9;
+}
+.rick {
+	background: #efe2e7;
+}
+.kyle {
+	background: #e6e8ff;
 }
